@@ -4,7 +4,6 @@ import com.app.notes.dto.NoteDto;
 import com.app.notes.entities.Note;
 import com.app.notes.mapper.NoteMapper;
 import com.app.notes.repositories.NoteRepository;
-import com.app.notes.services.exception.GenericException;
 import com.app.notes.services.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -39,8 +38,6 @@ public class NoteService {
             noteRepository.deleteById(noteId);
         } catch (EmptyResultDataAccessException e) {
             throw new ResourceNotFoundException("Id not found " + noteId);
-        } catch (Exception e) {
-            throw new GenericException(e.getMessage());
         }
     }
 }
