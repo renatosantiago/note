@@ -12,20 +12,23 @@ you need a token to authenticate in the application, when we start the applicati
 ### Using the postman, follow the steps below as shown in the pictures to get the token
 
 
-
-> set the api client credentials
+> **set the api client credentials**
 
 <img width="1017" alt="Captura de Tela 2023-01-20 às 21 59 02" src="https://user-images.githubusercontent.com/3075542/213834898-dbe3feb7-dc2b-4c25-8ab0-d6e504b28646.png">
 
 
+***
 
-> set the user credentials
+
+> **set the user credentials**
 
 <img width="1018" alt="Captura de Tela 2023-01-20 às 21 59 52" src="https://user-images.githubusercontent.com/3075542/213835239-11c0066f-ed15-433a-b512-d6ccd6b6398f.png">
 
 
+***
 
-> send the request to generate the token
+
+> **send the request to generate the token**
 
 <img width="1018" alt="Captura de Tela 2023-01-20 às 22 44 58" src="https://user-images.githubusercontent.com/3075542/213835555-67cc1f34-0e3d-4b23-865e-294a453ed780.png">
 
