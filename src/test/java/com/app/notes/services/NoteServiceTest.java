@@ -37,7 +37,7 @@ public class NoteServiceTest {
         nonExistingId = 2000L;
         doNothing().when(noteRepository).deleteById(existingId);
         doThrow(ResourceNotFoundException.class).when(noteRepository).deleteById(nonExistingId);
-        when(noteMapper.toListDto(getListNote())).thenReturn(getLitNoteDto());
+        when(noteMapper.toListDto(getListNote())).thenReturn(getListNoteDto());
         when(noteRepository.findByUserId(existingId)).thenReturn(getListNote());
     }
 
@@ -89,7 +89,7 @@ public class NoteServiceTest {
         return notes;
     }
 
-    private List<NoteDto> getLitNoteDto() {
+    private List<NoteDto> getListNoteDto() {
         List<NoteDto> litDto = new ArrayList<>();
         litDto.add(new NoteDto(1L,"description",1L));
         return litDto;
